@@ -1,0 +1,24 @@
+c:\users\rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\AutoUpdater.NET.dll
+c:\users\rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\AutoUpdater.NET.pdb
+c:\users\rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\ru\AutoUpdater.NET.resources.dll
+c:\users\rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.vbprojResolveAssemblyReference.cache
+c:\users\rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.Form1.resources
+c:\users\rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.Resources.resources
+c:\users\rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.vbproj.GenerateResource.Cache
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.AboutBox1.resources
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe.config
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe.manifest
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.application
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.pdb
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.xml
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.exe.manifest
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.application
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.exe
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.xml
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.pdb
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.Dialog1.resources
+D:\data\Documents\Visual Studio 11\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe.config
+D:\data\Documents\Visual Studio 11\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.exe
+D:\data\Documents\Visual Studio 11\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.xml
+D:\data\Documents\Visual Studio 11\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.pdb
