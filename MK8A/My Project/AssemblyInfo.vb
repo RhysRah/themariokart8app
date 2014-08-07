@@ -9,8 +9,8 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("The Mario Kart 8 App")> 
-<Assembly: AssemblyDescription("Well hello there people! Today I bring to you a new working project for Mario Kart 8 called The Mario Kart 8 App! This app includes some useful tools that can be used in Mario Kart 8, and will have many updates in the future, adding more tools and features to this new application.")> 
-<Assembly: AssemblyCompany("Rhys Wootton")> 
+<Assembly: AssemblyDescription("Well hello there people! Today we bring to you a new working project for Mario Kart 8 called The Mario Kart 8 App! This app includes some useful tools that can be used in Mario Kart 8, and will have many updates in the future, adding more tools and features to this application.")> 
+<Assembly: AssemblyCompany("Rhys Wootton, Jonathan Montineri")> 
 <Assembly: AssemblyProduct("MK8A")> 
 <Assembly: AssemblyCopyright("Copyright ©  2014")> 
 <Assembly: AssemblyTrademark("")> 
