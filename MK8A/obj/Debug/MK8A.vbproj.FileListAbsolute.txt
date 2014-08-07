@@ -36,3 +36,24 @@ D:\data\Documents\Visual Studio 11\Projects\MK8A2\MK8A\MK8A\obj\Debug\The Mario 
 D:\data\Documents\Visual Studio 11\Projects\MK8A2\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.exe
 D:\data\Documents\Visual Studio 11\Projects\MK8A2\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.xml
 D:\data\Documents\Visual Studio 11\Projects\MK8A2\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.pdb
+D:\data\Documents\tmk8a\MK8A\bin\Debug\The Mario Kart 8 App.exe.config
+D:\data\Documents\tmk8a\MK8A\obj\Debug\The Mario Kart 8 App.exe
+D:\data\Documents\tmk8a\MK8A\obj\Debug\The Mario Kart 8 App.xml
+D:\data\Documents\tmk8a\MK8A\obj\Debug\The Mario Kart 8 App.pdb
+D:\data\Documents\tmk8a\MK8A\bin\Debug\The Mario Kart 8 App.exe.manifest
+D:\data\Documents\tmk8a\MK8A\bin\Debug\The Mario Kart 8 App.application
+D:\data\Documents\tmk8a\MK8A\bin\Debug\The Mario Kart 8 App.exe
+D:\data\Documents\tmk8a\MK8A\bin\Debug\The Mario Kart 8 App.pdb
+D:\data\Documents\tmk8a\MK8A\bin\Debug\The Mario Kart 8 App.xml
+D:\data\Documents\tmk8a\MK8A\bin\Debug\Newtonsoft.Json.dll
+D:\data\Documents\tmk8a\MK8A\bin\Debug\Newtonsoft.Json.pdb
+D:\data\Documents\tmk8a\MK8A\bin\Debug\Newtonsoft.Json.xml
+D:\data\Documents\tmk8a\MK8A\obj\Debug\MK8A.vbprojResolveAssemblyReference.cache
+D:\data\Documents\tmk8a\MK8A\obj\Debug\The Mario Kart 8 App.g.resources
+D:\data\Documents\tmk8a\MK8A\obj\Debug\MK8A.AboutBox1.resources
+D:\data\Documents\tmk8a\MK8A\obj\Debug\MK8A.Dialog1.resources
+D:\data\Documents\tmk8a\MK8A\obj\Debug\MK8A.Form1.resources
+D:\data\Documents\tmk8a\MK8A\obj\Debug\MK8A.Resources.resources
+D:\data\Documents\tmk8a\MK8A\obj\Debug\MK8A.vbproj.GenerateResource.Cache
+D:\data\Documents\tmk8a\MK8A\obj\Debug\The Mario Kart 8 App.exe.manifest
+D:\data\Documents\tmk8a\MK8A\obj\Debug\The Mario Kart 8 App.application

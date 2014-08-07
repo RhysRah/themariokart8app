@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="The Mario Kart 8 App.exe" size="3885568">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="The Mario Kart 8 App.exe" size="3891200">
       <assemblyIdentity name="The Mario Kart 8 App" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LwkcgqDQE3EIWJLaaMeHBNp6njWI3G9JXSUKfVFGqdc=</dsig:DigestValue>
+        <dsig:DigestValue>okGY9n9nVhftgGemrhiRUchncpwodcdnSwr7FPmToOE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

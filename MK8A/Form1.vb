@@ -5,14 +5,20 @@ Public Class Form1
     Dim track3 As Integer
     Dim track4 As Integer
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+#Region "Main Menu"
+    Private Sub WindowLoad(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Show()
+
+        Dim CurrentVersion As String = "1.1.0.0"
+
+        Label2.Text = CurrentVersion
+
         Dim request As New System.Net.WebClient
         request.DownloadString("http://winepicgaming.de/mkapp/version.txt")
 
         Dim reply As String = request.DownloadString("http://winepicgaming.de/mkapp/version.txt")
 
-        If Not reply = "1.1.0.0" Then
+        If Not reply = CurrentVersion Then
             Dim p As New Process()
             p.StartInfo.FileName = "updater.exe"
             p.Start()
@@ -20,8 +26,28 @@ Public Class Form1
         End If
 
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
+    'What is this button exactly? I didn't find it anywhere
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
+        MsgBox("This feature is currently under test conditions. To check for updates, click 'Visit Thread' to go and check for new updates.")
+    End Sub
+
+    Private Sub ViewThread(sender As Object, e As EventArgs) Handles Button5.Click
+        System.Diagnostics.Process.Start("http://www.mariokartwii.com/threads/139519-The-Mario-Kart-8-App")
+    End Sub
+
+    Private Sub About(sender As Object, e As EventArgs) Handles Button6.Click
+        AboutBox1.Show()
+    End Sub
+
+    Private Sub Quit(sender As Object, e As EventArgs) Handles Button7.Click
+        Dialog1.Show()
+    End Sub
+#End Region
+
+#Region "Stat Calculator"
+
+    Private Sub CalculateStats(sender As Object, e As EventArgs) Handles Button1.Click
         If ComboBox1.Text = "Baby Mario" Then
             Label19.Text = "2.25"
             Label26.Text = "2.75"
@@ -1317,7 +1343,11 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+#End Region
+
+#Region "Clan War Table"
+
+    Private Sub ScreenshotInstructions(sender As Object, e As EventArgs) Handles Button3.Click
         MsgBox("PLEASE CLOSE THIS WINDOW BEFORE DOING THIS! To capture the table, press Alt+PrtScr on your keyboard, then copy it into a paint program, and then save it as a .png ")
     End Sub
 
@@ -1359,24 +1389,28 @@ Public Class Form1
         Label101.Text = Val(TextBox68.Text) + Val(TextBox69.Text) + Val(TextBox70.Text)
 
     End Sub
+#End Region
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs)
-        MsgBox("This feature is currently under test conditions. To check for updates, click 'Visit Thread' to go and check for new updates.")
+#Region "Time Trial Viewer"
+
+    Private Sub StartTTViewer(sender As Object, e As EventArgs) Handles TabPage4.Enter
+        PictureBox10.Image = My.Resources.MK8__Mario_Kart_Stadium
+        PictureBox11.Image = My.Resources.MK8__Water_Park
+        PictureBox12.Image = My.Resources.MK8__Sweet_Sweet_Canyon
+        PictureBox13.Image = My.Resources.MK8__Thwomp_Ruins
+
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
+        track1 = 27
+        track2 = 28
+        track3 = 19
+        track4 = 17
+        LoadRanks(track1)
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        System.Diagnostics.Process.Start("http://www.mariokartwii.com/threads/139519-The-Mario-Kart-8-App")
-    End Sub
-
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        AboutBox1.Show()
-    End Sub
-
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        Dialog1.Show()
-    End Sub
-
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub LoadMushroomCup(sender As Object, e As EventArgs) Handles PictureBox2.Click
         PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
@@ -1391,7 +1425,7 @@ Public Class Form1
         track4 = 17
     End Sub
 
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+    Private Sub LoadFlowerCup(sender As Object, e As EventArgs) Handles PictureBox3.Click
         PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
@@ -1406,7 +1440,7 @@ Public Class Form1
         track4 = 21
     End Sub
 
-    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+    Private Sub LoadStarCup(sender As Object, e As EventArgs) Handles PictureBox4.Click
         PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
@@ -1421,7 +1455,7 @@ Public Class Form1
         track4 = 24
     End Sub
 
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+    Private Sub LoadSpecialCup(sender As Object, e As EventArgs) Handles PictureBox5.Click
         PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
@@ -1436,7 +1470,7 @@ Public Class Form1
         track4 = 31
     End Sub
 
-    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+    Private Sub LoadShellCup(sender As Object, e As EventArgs) Handles PictureBox6.Click
         PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
@@ -1451,7 +1485,7 @@ Public Class Form1
         track4 = 35
     End Sub
 
-    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+    Private Sub LoadBananaCup(sender As Object, e As EventArgs) Handles PictureBox7.Click
         PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
@@ -1466,7 +1500,7 @@ Public Class Form1
         track4 = 32
     End Sub
 
-    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+    Private Sub LoadLeafCup(sender As Object, e As EventArgs) Handles PictureBox8.Click
         PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
@@ -1481,7 +1515,7 @@ Public Class Form1
         track4 = 45
     End Sub
 
-    Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
+    Private Sub LoadLightningCup(sender As Object, e As EventArgs) Handles PictureBox9.Click
         PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
@@ -1496,22 +1530,22 @@ Public Class Form1
         track4 = 47
     End Sub
 
-    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
-        loadranks(track1)
+    Private Sub LoadTrack1(sender As Object, e As EventArgs) Handles PictureBox10.Click
+        LoadRanks(track1)
     End Sub
 
-    Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
-        loadranks(track2)
+    Private Sub LoadTrack2(sender As Object, e As EventArgs) Handles PictureBox11.Click
+        LoadRanks(track2)
     End Sub
 
-    Private Sub PictureBox12_Click(sender As Object, e As EventArgs) Handles PictureBox12.Click
-        loadranks(track3)
+    Private Sub LoadTrack3(sender As Object, e As EventArgs) Handles PictureBox12.Click
+        LoadRanks(track3)
     End Sub
 
-    Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
-        loadranks(track4)
+    Private Sub LoadTrack4(sender As Object, e As EventArgs) Handles PictureBox13.Click
+        LoadRanks(track4)
     End Sub
-    Private Sub loadranks(ByVal ID As Integer)
+    Private Sub LoadRanks(ByVal ID As Integer)
         Dim downloader As New TimeTrialDownloader(ID)
         Rank1Mii.SizeMode = PictureBoxSizeMode.StretchImage
         Rank2Mii.SizeMode = PictureBoxSizeMode.StretchImage
@@ -1551,22 +1585,8 @@ Public Class Form1
         NNID6.Text = downloader.Scores(5).playerNNID
     End Sub
 
-    Private Sub TabPage4_Enter(sender As Object, e As EventArgs) Handles TabPage4.Enter
-        PictureBox10.Image = My.Resources.MK8__Mario_Kart_Stadium
-        PictureBox11.Image = My.Resources.MK8__Water_Park
-        PictureBox12.Image = My.Resources.MK8__Sweet_Sweet_Canyon
-        PictureBox13.Image = My.Resources.MK8__Thwomp_Ruins
+#End Region
 
-        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
-        track1 = 27
-        track2 = 28
-        track3 = 19
-        track4 = 17
-        loadranks(track1)
-    End Sub
 End Class
 
 
