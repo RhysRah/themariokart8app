@@ -1,5 +1,10 @@
 ﻿
 Public Class Form1
+    Dim track1 As Integer
+    Dim track2 As Integer
+    Dim track3 As Integer
+    Dim track4 As Integer
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Show()
         Dim request As New System.Net.WebClient
@@ -7,7 +12,7 @@ Public Class Form1
 
         Dim reply As String = request.DownloadString("http://winepicgaming.de/mkapp/version.txt")
 
-        If Not reply = "1.0.2.1" Then
+        If Not reply = "1.1.0.0" Then
             Dim p As New Process()
             p.StartInfo.FileName = "updater.exe"
             p.Start()
@@ -1370,6 +1375,199 @@ Public Class Form1
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Dialog1.Show()
     End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.Image = My.Resources.MK8__Mario_Kart_Stadium
+        PictureBox11.Image = My.Resources.MK8__Water_Park
+        PictureBox12.Image = My.Resources.MK8__Sweet_Sweet_Canyon
+        PictureBox13.Image = My.Resources.MK8__Thwomp_Ruins
+        track1 = 27
+        track2 = 28
+        track3 = 19
+        track4 = 17
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.Image = My.Resources.MK8__Mario_Circuit
+        PictureBox11.Image = My.Resources.MK8__Toad_Harbor
+        PictureBox12.Image = My.Resources.MK8__Twisted_Mansion
+        PictureBox13.Image = My.Resources.MK8__Shy_Guy_Falls
+        track1 = 16
+        track2 = 18
+        track3 = 20
+        track4 = 21
+    End Sub
+
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.Image = My.Resources.MK8__Sunshine_Airport
+        PictureBox11.Image = My.Resources.MK8__Dolphin_Shoals
+        PictureBox12.Image = My.Resources.MK8__Electrodrome
+        PictureBox13.Image = My.Resources.MK8__Mount_Wario
+        track1 = 26
+        track2 = 29
+        track3 = 25
+        track4 = 24
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.Image = My.Resources.MK8__Cloudtop_Cruise
+        PictureBox11.Image = My.Resources.MK8__Bone_Dry_Dunes
+        PictureBox12.Image = My.Resources.MK8__Bowser_s_Castle
+        PictureBox13.Image = My.Resources.MK8__Rainbow_Road
+        track1 = 23
+        track2 = 22
+        track3 = 30
+        track4 = 31
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.Image = My.Resources.MK8__Wii_Moo_Moo_Meadows
+        PictureBox11.Image = My.Resources.MK8__GBA_Mario_Circuit
+        PictureBox12.Image = My.Resources.MK8__DS_Cheep_Cheep_Beach
+        PictureBox13.Image = My.Resources.MK8__N64_Toad_s_Turnpike
+        track1 = 33
+        track2 = 38
+        track3 = 36
+        track4 = 35
+    End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.Image = My.Resources.MK8__GCN_Dry_Dry_Desert
+        PictureBox11.Image = My.Resources.MK8__SNES_Donut_Plains_3
+        PictureBox12.Image = My.Resources.MK8__N64_Royal_Raceway
+        PictureBox13.Image = My.Resources.MK8__3DS_DK_Jungle
+        track1 = 42
+        track2 = 41
+        track3 = 34
+        track4 = 32
+    End Sub
+
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.Image = My.Resources.MK8__DS_Wario_Stadium
+        PictureBox11.Image = My.Resources.MK8__GCN_Sherbet_Land
+        PictureBox12.Image = My.Resources.MK8__3DS_Music_Park
+        PictureBox13.Image = My.Resources.MK8__N64_Yoshi_Valley
+        track1 = 46
+        track2 = 37
+        track3 = 39
+        track4 = 45
+    End Sub
+
+    Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.Image = My.Resources.MK8__DS_Tick_Tock_Clock
+        PictureBox11.Image = My.Resources.MK8__3DS_Piranha_Plant_Slide
+        PictureBox12.Image = My.Resources.MK8__Wii_Grumble_Volcano
+        PictureBox13.Image = My.Resources.MK8__N64_Rainbow_Road
+        track1 = 44
+        track2 = 43
+        track3 = 40
+        track4 = 47
+    End Sub
+
+    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
+        loadranks(track1)
+    End Sub
+
+    Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
+        loadranks(track2)
+    End Sub
+
+    Private Sub PictureBox12_Click(sender As Object, e As EventArgs) Handles PictureBox12.Click
+        loadranks(track3)
+    End Sub
+
+    Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
+        loadranks(track4)
+    End Sub
+    Private Sub loadranks(ByVal ID As Integer)
+        Dim downloader As New TimeTrialDownloader(ID)
+        Rank1Mii.SizeMode = PictureBoxSizeMode.StretchImage
+        Rank2Mii.SizeMode = PictureBoxSizeMode.StretchImage
+        Rank3Mii.SizeMode = PictureBoxSizeMode.StretchImage
+        Rank4Mii.SizeMode = PictureBoxSizeMode.StretchImage
+        Rank5Mii.SizeMode = PictureBoxSizeMode.StretchImage
+        Rank6Mii.SizeMode = PictureBoxSizeMode.StretchImage
+
+        Rank1Mii.ImageLocation = downloader.Scores(0).iconUrl
+        TopRankName1.Text = downloader.Scores(0).playerName
+        TopRankTime1.Text = downloader.Scores(0).time
+        NNID1.Text = downloader.Scores(0).playerNNID
+
+        Rank2Mii.ImageLocation = downloader.Scores(1).iconUrl
+        TopRankName2.Text = downloader.Scores(1).playerName
+        TopRankTime2.Text = downloader.Scores(1).time
+        NNID2.Text = downloader.Scores(1).playerNNID
+
+        Rank3Mii.ImageLocation = downloader.Scores(2).iconUrl
+        TopRankName3.Text = downloader.Scores(2).playerName
+        TopRankTime3.Text = downloader.Scores(2).time
+        NNID3.Text = downloader.Scores(2).playerNNID
+
+        Rank4Mii.ImageLocation = downloader.Scores(3).iconUrl
+        TopRankName4.Text = downloader.Scores(3).playerName
+        TopRankTime4.Text = downloader.Scores(3).time
+        NNID4.Text = downloader.Scores(3).playerNNID
+
+        Rank5Mii.ImageLocation = downloader.Scores(4).iconUrl
+        TopRankName5.Text = downloader.Scores(4).playerName
+        TopRankTime5.Text = downloader.Scores(4).time
+        NNID5.Text = downloader.Scores(4).playerNNID
+
+        Rank6Mii.ImageLocation = downloader.Scores(5).iconUrl
+        TopRankName6.Text = downloader.Scores(5).playerName
+        TopRankTime6.Text = downloader.Scores(5).time
+        NNID6.Text = downloader.Scores(5).playerNNID
+    End Sub
+
+    Private Sub TabPage4_Enter(sender As Object, e As EventArgs) Handles TabPage4.Enter
+        PictureBox10.Image = My.Resources.MK8__Mario_Kart_Stadium
+        PictureBox11.Image = My.Resources.MK8__Water_Park
+        PictureBox12.Image = My.Resources.MK8__Sweet_Sweet_Canyon
+        PictureBox13.Image = My.Resources.MK8__Thwomp_Ruins
+
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox12.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox13.SizeMode = PictureBoxSizeMode.StretchImage
+        track1 = 27
+        track2 = 28
+        track3 = 19
+        track4 = 17
+        loadranks(track1)
+    End Sub
 End Class
+
 
 

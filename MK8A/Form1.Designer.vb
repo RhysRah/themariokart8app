@@ -209,11 +209,73 @@ Partial Class Form1
         Me.Label81 = New System.Windows.Forms.Label()
         Me.Label80 = New System.Windows.Forms.Label()
         Me.Label79 = New System.Windows.Forms.Label()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.NNID6 = New System.Windows.Forms.Label()
+        Me.NNID5 = New System.Windows.Forms.Label()
+        Me.NNID4 = New System.Windows.Forms.Label()
+        Me.NNID3 = New System.Windows.Forms.Label()
+        Me.NNID2 = New System.Windows.Forms.Label()
+        Me.NNID1 = New System.Windows.Forms.Label()
+        Me.Label107 = New System.Windows.Forms.Label()
+        Me.Label106 = New System.Windows.Forms.Label()
+        Me.Label105 = New System.Windows.Forms.Label()
+        Me.Label104 = New System.Windows.Forms.Label()
+        Me.Label103 = New System.Windows.Forms.Label()
+        Me.Label102 = New System.Windows.Forms.Label()
+        Me.TopRankTime6 = New System.Windows.Forms.Label()
+        Me.TopRankTime4 = New System.Windows.Forms.Label()
+        Me.TopRankTime5 = New System.Windows.Forms.Label()
+        Me.TopRankTime3 = New System.Windows.Forms.Label()
+        Me.TopRankTime2 = New System.Windows.Forms.Label()
+        Me.TopRankTime1 = New System.Windows.Forms.Label()
+        Me.TopRankName6 = New System.Windows.Forms.Label()
+        Me.TopRankName5 = New System.Windows.Forms.Label()
+        Me.TopRankName4 = New System.Windows.Forms.Label()
+        Me.TopRankName3 = New System.Windows.Forms.Label()
+        Me.TopRankName2 = New System.Windows.Forms.Label()
+        Me.TopRankName1 = New System.Windows.Forms.Label()
+        Me.Rank6Mii = New System.Windows.Forms.PictureBox()
+        Me.Rank5Mii = New System.Windows.Forms.PictureBox()
+        Me.Rank4Mii = New System.Windows.Forms.PictureBox()
+        Me.Rank3Mii = New System.Windows.Forms.PictureBox()
+        Me.Rank2Mii = New System.Windows.Forms.PictureBox()
+        Me.Rank1Mii = New System.Windows.Forms.PictureBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Homepage.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
+        CType(Me.Rank6Mii, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Rank5Mii, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Rank4Mii, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Rank3Mii, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Rank2Mii, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Rank1Mii, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Homepage
@@ -221,6 +283,7 @@ Partial Class Form1
         Me.Homepage.Controls.Add(Me.TabPage1)
         Me.Homepage.Controls.Add(Me.TabPage2)
         Me.Homepage.Controls.Add(Me.TabPage3)
+        Me.Homepage.Controls.Add(Me.TabPage4)
         Me.Homepage.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Homepage.Location = New System.Drawing.Point(0, 0)
         Me.Homepage.Name = "Homepage"
@@ -279,7 +342,7 @@ Partial Class Form1
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(63, 15)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "1.0.2.1"
+        Me.Label2.Text = "1.1.0.0"
         '
         'Label1
         '
@@ -287,7 +350,7 @@ Partial Class Form1
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(1, 96)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(773, 290)
+        Me.Label1.Size = New System.Drawing.Size(779, 319)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = resources.GetString("Label1.Text")
         '
@@ -2097,12 +2160,485 @@ Partial Class Form1
         Me.Label79.TabIndex = 0
         Me.Label79.Text = "Clan 1"
         '
+        'TabPage4
+        '
+        Me.TabPage4.Controls.Add(Me.NNID6)
+        Me.TabPage4.Controls.Add(Me.NNID5)
+        Me.TabPage4.Controls.Add(Me.NNID4)
+        Me.TabPage4.Controls.Add(Me.NNID3)
+        Me.TabPage4.Controls.Add(Me.NNID2)
+        Me.TabPage4.Controls.Add(Me.NNID1)
+        Me.TabPage4.Controls.Add(Me.Label107)
+        Me.TabPage4.Controls.Add(Me.Label106)
+        Me.TabPage4.Controls.Add(Me.Label105)
+        Me.TabPage4.Controls.Add(Me.Label104)
+        Me.TabPage4.Controls.Add(Me.Label103)
+        Me.TabPage4.Controls.Add(Me.Label102)
+        Me.TabPage4.Controls.Add(Me.TopRankTime6)
+        Me.TabPage4.Controls.Add(Me.TopRankTime4)
+        Me.TabPage4.Controls.Add(Me.TopRankTime5)
+        Me.TabPage4.Controls.Add(Me.TopRankTime3)
+        Me.TabPage4.Controls.Add(Me.TopRankTime2)
+        Me.TabPage4.Controls.Add(Me.TopRankTime1)
+        Me.TabPage4.Controls.Add(Me.TopRankName6)
+        Me.TabPage4.Controls.Add(Me.TopRankName5)
+        Me.TabPage4.Controls.Add(Me.TopRankName4)
+        Me.TabPage4.Controls.Add(Me.TopRankName3)
+        Me.TabPage4.Controls.Add(Me.TopRankName2)
+        Me.TabPage4.Controls.Add(Me.TopRankName1)
+        Me.TabPage4.Controls.Add(Me.Rank6Mii)
+        Me.TabPage4.Controls.Add(Me.Rank5Mii)
+        Me.TabPage4.Controls.Add(Me.Rank4Mii)
+        Me.TabPage4.Controls.Add(Me.Rank3Mii)
+        Me.TabPage4.Controls.Add(Me.Rank2Mii)
+        Me.TabPage4.Controls.Add(Me.Rank1Mii)
+        Me.TabPage4.Controls.Add(Me.PictureBox13)
+        Me.TabPage4.Controls.Add(Me.PictureBox12)
+        Me.TabPage4.Controls.Add(Me.PictureBox11)
+        Me.TabPage4.Controls.Add(Me.PictureBox10)
+        Me.TabPage4.Controls.Add(Me.PictureBox9)
+        Me.TabPage4.Controls.Add(Me.PictureBox8)
+        Me.TabPage4.Controls.Add(Me.PictureBox7)
+        Me.TabPage4.Controls.Add(Me.PictureBox6)
+        Me.TabPage4.Controls.Add(Me.PictureBox5)
+        Me.TabPage4.Controls.Add(Me.PictureBox4)
+        Me.TabPage4.Controls.Add(Me.PictureBox3)
+        Me.TabPage4.Controls.Add(Me.PictureBox2)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Size = New System.Drawing.Size(774, 524)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "Time Trial Viewer"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'NNID6
+        '
+        Me.NNID6.AutoSize = True
+        Me.NNID6.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NNID6.Location = New System.Drawing.Point(628, 475)
+        Me.NNID6.Name = "NNID6"
+        Me.NNID6.Size = New System.Drawing.Size(40, 28)
+        Me.NNID6.TabIndex = 44
+        Me.NNID6.Text = "1111"
+        '
+        'NNID5
+        '
+        Me.NNID5.AutoSize = True
+        Me.NNID5.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NNID5.Location = New System.Drawing.Point(628, 412)
+        Me.NNID5.Name = "NNID5"
+        Me.NNID5.Size = New System.Drawing.Size(40, 28)
+        Me.NNID5.TabIndex = 43
+        Me.NNID5.Text = "1111"
+        '
+        'NNID4
+        '
+        Me.NNID4.AutoSize = True
+        Me.NNID4.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NNID4.Location = New System.Drawing.Point(628, 350)
+        Me.NNID4.Name = "NNID4"
+        Me.NNID4.Size = New System.Drawing.Size(40, 28)
+        Me.NNID4.TabIndex = 42
+        Me.NNID4.Text = "1111"
+        '
+        'NNID3
+        '
+        Me.NNID3.AutoSize = True
+        Me.NNID3.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NNID3.ForeColor = System.Drawing.Color.Goldenrod
+        Me.NNID3.Location = New System.Drawing.Point(628, 287)
+        Me.NNID3.Name = "NNID3"
+        Me.NNID3.Size = New System.Drawing.Size(40, 28)
+        Me.NNID3.TabIndex = 41
+        Me.NNID3.Text = "1111"
+        '
+        'NNID2
+        '
+        Me.NNID2.AutoSize = True
+        Me.NNID2.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NNID2.ForeColor = System.Drawing.Color.Silver
+        Me.NNID2.Location = New System.Drawing.Point(628, 224)
+        Me.NNID2.Name = "NNID2"
+        Me.NNID2.Size = New System.Drawing.Size(40, 28)
+        Me.NNID2.TabIndex = 40
+        Me.NNID2.Text = "1111"
+        '
+        'NNID1
+        '
+        Me.NNID1.AutoSize = True
+        Me.NNID1.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NNID1.ForeColor = System.Drawing.Color.Gold
+        Me.NNID1.Location = New System.Drawing.Point(628, 161)
+        Me.NNID1.Name = "NNID1"
+        Me.NNID1.Size = New System.Drawing.Size(40, 28)
+        Me.NNID1.TabIndex = 39
+        Me.NNID1.Text = "1111"
+        '
+        'Label107
+        '
+        Me.Label107.AutoSize = True
+        Me.Label107.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label107.Location = New System.Drawing.Point(560, 475)
+        Me.Label107.Name = "Label107"
+        Me.Label107.Size = New System.Drawing.Size(62, 28)
+        Me.Label107.TabIndex = 38
+        Me.Label107.Text = "NNID:"
+        '
+        'Label106
+        '
+        Me.Label106.AutoSize = True
+        Me.Label106.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label106.Location = New System.Drawing.Point(560, 412)
+        Me.Label106.Name = "Label106"
+        Me.Label106.Size = New System.Drawing.Size(62, 28)
+        Me.Label106.TabIndex = 37
+        Me.Label106.Text = "NNID:"
+        '
+        'Label105
+        '
+        Me.Label105.AutoSize = True
+        Me.Label105.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label105.Location = New System.Drawing.Point(560, 350)
+        Me.Label105.Name = "Label105"
+        Me.Label105.Size = New System.Drawing.Size(62, 28)
+        Me.Label105.TabIndex = 36
+        Me.Label105.Text = "NNID:"
+        '
+        'Label104
+        '
+        Me.Label104.AutoSize = True
+        Me.Label104.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label104.Location = New System.Drawing.Point(560, 287)
+        Me.Label104.Name = "Label104"
+        Me.Label104.Size = New System.Drawing.Size(62, 28)
+        Me.Label104.TabIndex = 35
+        Me.Label104.Text = "NNID:"
+        '
+        'Label103
+        '
+        Me.Label103.AutoSize = True
+        Me.Label103.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label103.Location = New System.Drawing.Point(560, 224)
+        Me.Label103.Name = "Label103"
+        Me.Label103.Size = New System.Drawing.Size(62, 28)
+        Me.Label103.TabIndex = 34
+        Me.Label103.Text = "NNID:"
+        '
+        'Label102
+        '
+        Me.Label102.AutoSize = True
+        Me.Label102.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label102.Location = New System.Drawing.Point(560, 161)
+        Me.Label102.Name = "Label102"
+        Me.Label102.Size = New System.Drawing.Size(62, 28)
+        Me.Label102.TabIndex = 33
+        Me.Label102.Text = "NNID:"
+        '
+        'TopRankTime6
+        '
+        Me.TopRankTime6.AutoSize = True
+        Me.TopRankTime6.Font = New System.Drawing.Font("Segoe UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TopRankTime6.Location = New System.Drawing.Point(393, 459)
+        Me.TopRankTime6.Name = "TopRankTime6"
+        Me.TopRankTime6.Size = New System.Drawing.Size(160, 51)
+        Me.TopRankTime6.TabIndex = 32
+        Me.TopRankTime6.Text = "Label102"
+        '
+        'TopRankTime4
+        '
+        Me.TopRankTime4.AutoSize = True
+        Me.TopRankTime4.Font = New System.Drawing.Font("Segoe UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TopRankTime4.Location = New System.Drawing.Point(394, 334)
+        Me.TopRankTime4.Name = "TopRankTime4"
+        Me.TopRankTime4.Size = New System.Drawing.Size(160, 51)
+        Me.TopRankTime4.TabIndex = 31
+        Me.TopRankTime4.Text = "Label102"
+        '
+        'TopRankTime5
+        '
+        Me.TopRankTime5.AutoSize = True
+        Me.TopRankTime5.Font = New System.Drawing.Font("Segoe UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TopRankTime5.Location = New System.Drawing.Point(394, 396)
+        Me.TopRankTime5.Name = "TopRankTime5"
+        Me.TopRankTime5.Size = New System.Drawing.Size(160, 51)
+        Me.TopRankTime5.TabIndex = 30
+        Me.TopRankTime5.Text = "Label102"
+        '
+        'TopRankTime3
+        '
+        Me.TopRankTime3.AutoSize = True
+        Me.TopRankTime3.Font = New System.Drawing.Font("Segoe UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TopRankTime3.ForeColor = System.Drawing.Color.Goldenrod
+        Me.TopRankTime3.Location = New System.Drawing.Point(394, 271)
+        Me.TopRankTime3.Name = "TopRankTime3"
+        Me.TopRankTime3.Size = New System.Drawing.Size(160, 51)
+        Me.TopRankTime3.TabIndex = 29
+        Me.TopRankTime3.Text = "Label102"
+        '
+        'TopRankTime2
+        '
+        Me.TopRankTime2.AutoSize = True
+        Me.TopRankTime2.Font = New System.Drawing.Font("Segoe UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TopRankTime2.ForeColor = System.Drawing.Color.Silver
+        Me.TopRankTime2.Location = New System.Drawing.Point(394, 208)
+        Me.TopRankTime2.Name = "TopRankTime2"
+        Me.TopRankTime2.Size = New System.Drawing.Size(160, 51)
+        Me.TopRankTime2.TabIndex = 28
+        Me.TopRankTime2.Text = "Label102"
+        '
+        'TopRankTime1
+        '
+        Me.TopRankTime1.AutoSize = True
+        Me.TopRankTime1.Font = New System.Drawing.Font("Segoe UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TopRankTime1.ForeColor = System.Drawing.Color.Gold
+        Me.TopRankTime1.Location = New System.Drawing.Point(394, 145)
+        Me.TopRankTime1.Name = "TopRankTime1"
+        Me.TopRankTime1.Size = New System.Drawing.Size(160, 51)
+        Me.TopRankTime1.TabIndex = 27
+        Me.TopRankTime1.Text = "Label102"
+        '
+        'TopRankName6
+        '
+        Me.TopRankName6.AutoSize = True
+        Me.TopRankName6.Font = New System.Drawing.Font("Segoe UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TopRankName6.Location = New System.Drawing.Point(160, 459)
+        Me.TopRankName6.Name = "TopRankName6"
+        Me.TopRankName6.Size = New System.Drawing.Size(159, 51)
+        Me.TopRankName6.TabIndex = 26
+        Me.TopRankName6.Text = "Label107"
+        '
+        'TopRankName5
+        '
+        Me.TopRankName5.AutoSize = True
+        Me.TopRankName5.Font = New System.Drawing.Font("Segoe UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TopRankName5.Location = New System.Drawing.Point(160, 396)
+        Me.TopRankName5.Name = "TopRankName5"
+        Me.TopRankName5.Size = New System.Drawing.Size(160, 51)
+        Me.TopRankName5.TabIndex = 25
+        Me.TopRankName5.Text = "Label106"
+        '
+        'TopRankName4
+        '
+        Me.TopRankName4.AutoSize = True
+        Me.TopRankName4.Font = New System.Drawing.Font("Segoe UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TopRankName4.Location = New System.Drawing.Point(160, 334)
+        Me.TopRankName4.Name = "TopRankName4"
+        Me.TopRankName4.Size = New System.Drawing.Size(160, 51)
+        Me.TopRankName4.TabIndex = 24
+        Me.TopRankName4.Text = "Label105"
+        '
+        'TopRankName3
+        '
+        Me.TopRankName3.AutoSize = True
+        Me.TopRankName3.Font = New System.Drawing.Font("Segoe UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TopRankName3.ForeColor = System.Drawing.Color.Goldenrod
+        Me.TopRankName3.Location = New System.Drawing.Point(160, 271)
+        Me.TopRankName3.Name = "TopRankName3"
+        Me.TopRankName3.Size = New System.Drawing.Size(160, 51)
+        Me.TopRankName3.TabIndex = 23
+        Me.TopRankName3.Text = "Label104"
+        '
+        'TopRankName2
+        '
+        Me.TopRankName2.AutoSize = True
+        Me.TopRankName2.Font = New System.Drawing.Font("Segoe UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TopRankName2.ForeColor = System.Drawing.Color.Silver
+        Me.TopRankName2.Location = New System.Drawing.Point(160, 208)
+        Me.TopRankName2.Name = "TopRankName2"
+        Me.TopRankName2.Size = New System.Drawing.Size(160, 51)
+        Me.TopRankName2.TabIndex = 22
+        Me.TopRankName2.Text = "Label103"
+        '
+        'TopRankName1
+        '
+        Me.TopRankName1.AutoSize = True
+        Me.TopRankName1.Font = New System.Drawing.Font("Segoe UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TopRankName1.ForeColor = System.Drawing.Color.Gold
+        Me.TopRankName1.Location = New System.Drawing.Point(160, 145)
+        Me.TopRankName1.Name = "TopRankName1"
+        Me.TopRankName1.Size = New System.Drawing.Size(160, 51)
+        Me.TopRankName1.TabIndex = 21
+        Me.TopRankName1.Text = "Label102"
+        '
+        'Rank6Mii
+        '
+        Me.Rank6Mii.Location = New System.Drawing.Point(95, 460)
+        Me.Rank6Mii.Name = "Rank6Mii"
+        Me.Rank6Mii.Size = New System.Drawing.Size(50, 50)
+        Me.Rank6Mii.TabIndex = 20
+        Me.Rank6Mii.TabStop = False
+        '
+        'Rank5Mii
+        '
+        Me.Rank5Mii.Location = New System.Drawing.Point(95, 397)
+        Me.Rank5Mii.Name = "Rank5Mii"
+        Me.Rank5Mii.Size = New System.Drawing.Size(50, 50)
+        Me.Rank5Mii.TabIndex = 19
+        Me.Rank5Mii.TabStop = False
+        '
+        'Rank4Mii
+        '
+        Me.Rank4Mii.Location = New System.Drawing.Point(95, 334)
+        Me.Rank4Mii.Name = "Rank4Mii"
+        Me.Rank4Mii.Size = New System.Drawing.Size(50, 50)
+        Me.Rank4Mii.TabIndex = 18
+        Me.Rank4Mii.TabStop = False
+        '
+        'Rank3Mii
+        '
+        Me.Rank3Mii.Location = New System.Drawing.Point(95, 271)
+        Me.Rank3Mii.Name = "Rank3Mii"
+        Me.Rank3Mii.Size = New System.Drawing.Size(50, 50)
+        Me.Rank3Mii.TabIndex = 17
+        Me.Rank3Mii.TabStop = False
+        '
+        'Rank2Mii
+        '
+        Me.Rank2Mii.Location = New System.Drawing.Point(95, 208)
+        Me.Rank2Mii.Name = "Rank2Mii"
+        Me.Rank2Mii.Size = New System.Drawing.Size(50, 50)
+        Me.Rank2Mii.TabIndex = 16
+        Me.Rank2Mii.TabStop = False
+        '
+        'Rank1Mii
+        '
+        Me.Rank1Mii.Location = New System.Drawing.Point(95, 145)
+        Me.Rank1Mii.Name = "Rank1Mii"
+        Me.Rank1Mii.Size = New System.Drawing.Size(50, 50)
+        Me.Rank1Mii.TabIndex = 15
+        Me.Rank1Mii.TabStop = False
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox13.Location = New System.Drawing.Point(599, 12)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(147, 97)
+        Me.PictureBox13.TabIndex = 11
+        Me.PictureBox13.TabStop = False
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox12.Location = New System.Drawing.Point(431, 12)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(147, 97)
+        Me.PictureBox12.TabIndex = 10
+        Me.PictureBox12.TabStop = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox11.Location = New System.Drawing.Point(263, 12)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(147, 97)
+        Me.PictureBox11.TabIndex = 9
+        Me.PictureBox11.TabStop = False
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox10.Location = New System.Drawing.Point(95, 12)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(147, 97)
+        Me.PictureBox10.TabIndex = 8
+        Me.PictureBox10.TabStop = False
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.White
+        Me.PictureBox9.BackgroundImage = CType(resources.GetObject("PictureBox9.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox9.Location = New System.Drawing.Point(8, 453)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(57, 57)
+        Me.PictureBox9.TabIndex = 7
+        Me.PictureBox9.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackColor = System.Drawing.Color.White
+        Me.PictureBox8.BackgroundImage = CType(resources.GetObject("PictureBox8.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox8.Location = New System.Drawing.Point(8, 390)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(57, 57)
+        Me.PictureBox8.TabIndex = 6
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.White
+        Me.PictureBox7.BackgroundImage = CType(resources.GetObject("PictureBox7.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox7.Location = New System.Drawing.Point(8, 327)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(57, 57)
+        Me.PictureBox7.TabIndex = 5
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.White
+        Me.PictureBox6.BackgroundImage = CType(resources.GetObject("PictureBox6.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox6.Location = New System.Drawing.Point(8, 264)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(57, 57)
+        Me.PictureBox6.TabIndex = 4
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.White
+        Me.PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox5.Location = New System.Drawing.Point(8, 201)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(57, 57)
+        Me.PictureBox5.TabIndex = 3
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.White
+        Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox4.Location = New System.Drawing.Point(8, 138)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(57, 57)
+        Me.PictureBox4.TabIndex = 2
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.White
+        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox3.Location = New System.Drawing.Point(8, 75)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(57, 57)
+        Me.PictureBox3.TabIndex = 1
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.White
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(8, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(57, 57)
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(782, 553)
         Me.Controls.Add(Me.Homepage)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "The Mario Kart 8 App"
@@ -2114,6 +2650,26 @@ Partial Class Form1
         Me.TabPage2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        Me.TabPage4.ResumeLayout(False)
+        Me.TabPage4.PerformLayout()
+        CType(Me.Rank6Mii, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Rank5Mii, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Rank4Mii, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Rank3Mii, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Rank2Mii, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Rank1Mii, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2303,5 +2859,48 @@ Partial Class Form1
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents TabPage4 As System.Windows.Forms.TabPage
+    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox13 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox12 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
+    Friend WithEvents Rank6Mii As System.Windows.Forms.PictureBox
+    Friend WithEvents Rank5Mii As System.Windows.Forms.PictureBox
+    Friend WithEvents Rank4Mii As System.Windows.Forms.PictureBox
+    Friend WithEvents Rank3Mii As System.Windows.Forms.PictureBox
+    Friend WithEvents Rank2Mii As System.Windows.Forms.PictureBox
+    Friend WithEvents Rank1Mii As System.Windows.Forms.PictureBox
+    Friend WithEvents TopRankTime6 As System.Windows.Forms.Label
+    Friend WithEvents TopRankTime4 As System.Windows.Forms.Label
+    Friend WithEvents TopRankTime5 As System.Windows.Forms.Label
+    Friend WithEvents TopRankTime3 As System.Windows.Forms.Label
+    Friend WithEvents TopRankTime2 As System.Windows.Forms.Label
+    Friend WithEvents TopRankTime1 As System.Windows.Forms.Label
+    Friend WithEvents TopRankName6 As System.Windows.Forms.Label
+    Friend WithEvents TopRankName5 As System.Windows.Forms.Label
+    Friend WithEvents TopRankName4 As System.Windows.Forms.Label
+    Friend WithEvents TopRankName3 As System.Windows.Forms.Label
+    Friend WithEvents TopRankName2 As System.Windows.Forms.Label
+    Friend WithEvents TopRankName1 As System.Windows.Forms.Label
+    Friend WithEvents NNID6 As System.Windows.Forms.Label
+    Friend WithEvents NNID5 As System.Windows.Forms.Label
+    Friend WithEvents NNID4 As System.Windows.Forms.Label
+    Friend WithEvents NNID3 As System.Windows.Forms.Label
+    Friend WithEvents NNID2 As System.Windows.Forms.Label
+    Friend WithEvents NNID1 As System.Windows.Forms.Label
+    Friend WithEvents Label107 As System.Windows.Forms.Label
+    Friend WithEvents Label106 As System.Windows.Forms.Label
+    Friend WithEvents Label105 As System.Windows.Forms.Label
+    Friend WithEvents Label104 As System.Windows.Forms.Label
+    Friend WithEvents Label103 As System.Windows.Forms.Label
+    Friend WithEvents Label102 As System.Windows.Forms.Label
 
 End Class
