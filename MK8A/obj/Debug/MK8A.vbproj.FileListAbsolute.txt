@@ -1,24 +1,3 @@
-c:\users\rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.Form1.resources
-c:\users\rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.Resources.resources
-c:\users\rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.vbproj.GenerateResource.Cache
-C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.AboutBox1.resources
-C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe.config
-C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe.manifest
-C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.application
-C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe
-C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.pdb
-C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.xml
-C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.exe.manifest
-C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.application
-C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.exe
-C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.xml
-C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.pdb
-C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.Dialog1.resources
-C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\bin\Debug\Newtonsoft.Json.pdb
-C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe.CodeAnalysisLog.xml
-C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe.lastcodeanalysissucceeded
 D:\data\Documents\Visual Studio 11\Projects\MK8A2\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe.config
 D:\data\Documents\Visual Studio 11\Projects\MK8A2\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe.manifest
 D:\data\Documents\Visual Studio 11\Projects\MK8A2\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.application
@@ -57,3 +36,23 @@ D:\data\Documents\tmk8a\MK8A\obj\Debug\MK8A.Resources.resources
 D:\data\Documents\tmk8a\MK8A\obj\Debug\MK8A.vbproj.GenerateResource.Cache
 D:\data\Documents\tmk8a\MK8A\obj\Debug\The Mario Kart 8 App.exe.manifest
 D:\data\Documents\tmk8a\MK8A\obj\Debug\The Mario Kart 8 App.application
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe.config
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe.manifest
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.application
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.exe
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.pdb
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\bin\Debug\The Mario Kart 8 App.xml
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\bin\Debug\MktvdbQuery.dll
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.vbprojResolveAssemblyReference.cache
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.g.resources
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.AboutBox1.resources
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.Dialog1.resources
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.Form1.resources
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.MKTV_Search.resources
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.Resources.resources
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\MK8A.vbproj.GenerateResource.Cache
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.exe.manifest
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.application
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.exe
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.xml
+C:\Users\Rhys\Documents\Visual Studio 2013\Projects\MK8A\MK8A\obj\Debug\The Mario Kart 8 App.pdb

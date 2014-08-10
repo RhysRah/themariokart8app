@@ -18,3 +18,13 @@ D:\data\Documents\Visual Studio 11\Projects\MK8A\Updater\obj\Debug\Updater.vbpro
 D:\data\Documents\Visual Studio 11\Projects\MK8A\Updater\obj\Debug\Updater.exe
 D:\data\Documents\Visual Studio 11\Projects\MK8A\Updater\obj\Debug\Updater.xml
 D:\data\Documents\Visual Studio 11\Projects\MK8A\Updater\obj\Debug\Updater.pdb
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\Updater.exe.config
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\Updater.exe
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\Updater.pdb
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\MK8A\bin\Debug\Updater.xml
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\Updater\obj\Debug\Updater.vbprojResolveAssemblyReference.cache
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\Updater\obj\Debug\Updater.Resources.resources
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\Updater\obj\Debug\Updater.vbproj.GenerateResource.Cache
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\Updater\obj\Debug\Updater.exe
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\Updater\obj\Debug\Updater.xml
+C:\Users\Rhys\documents\visual studio 2013\Projects\MK8A\Updater\obj\Debug\Updater.pdb

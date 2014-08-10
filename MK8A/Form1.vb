@@ -1,35 +1,63 @@
-﻿
+﻿Imports MktvdbQuery
+Imports Newtonsoft.Json
+Imports Microsoft.Win32
+
 Public Class Form1
     Dim track1 As Integer
     Dim track2 As Integer
     Dim track3 As Integer
     Dim track4 As Integer
+    Dim miiverseurl As String
+
+    Public youtube As List(Of VideoObject)
+    Public favourites As List(Of VideoObject)
+    Public AreFavShown As Boolean
+
 
 #Region "Main Menu"
     Private Sub WindowLoad(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim args As String() = Environment.GetCommandLineArgs
+
         Me.Show()
+        Try
+            If args.Length > 1 Then
+                Dim data As String() = args(1).Split(":")
+                MKTVDBExternalCall(data(1), data(2))
+            End If
+        Catch ex As Exception
+        End Try
 
-        Dim CurrentVersion As String = "1.1.0.0"
+        Dim CurrentVersion As String = "1.2.0.0"
 
-        Label2.Text = CurrentVersion
+        LatestVersion.Text = CurrentVersion
 
         Dim request As New System.Net.WebClient
-        request.DownloadString("http://winepicgaming.de/mkapp/version.txt")
 
-        Dim reply As String = request.DownloadString("http://winepicgaming.de/mkapp/version.txt")
+        Try
+            Dim reply As String = request.DownloadString("http://winepicgaming.de/mkapp/version.txt")
 
-        If Not reply = CurrentVersion Then
-            Dim p As New Process()
-            p.StartInfo.FileName = "updater.exe"
-            p.Start()
-            End
+            If Not reply = CurrentVersion Then
+                CheckUpdates.Text = "Update Available"
+            Else
+                CheckUpdates.Visible = False
+            End If
+
+        Catch ex As Exception
+            CheckUpdates.Text = "Check for Updates"
+        End Try
+
+        favourites = New List(Of VideoObject)
+
+        If IsRegistryKeySet() Then
+            MKTVDB.Text = "Uninstall MKTVDB Handler"
         End If
-
     End Sub
 
-    'What is this button exactly? I didn't find it anywhere
-    Private Sub Button4_Click(sender As Object, e As EventArgs)
-        MsgBox("This feature is currently under test conditions. To check for updates, click 'Visit Thread' to go and check for new updates.")
+    Private Sub CheckUpdates_Click(sender As Object, e As EventArgs) Handles CheckUpdates.Click
+        If CheckUpdates.Text = "Update Available" Then
+            System.Diagnostics.Process.Start("GUI_Updater.exe")
+            End
+        End If
     End Sub
 
     Private Sub ViewThread(sender As Object, e As EventArgs) Handles Button5.Click
@@ -1408,6 +1436,10 @@ Public Class Form1
         track3 = 19
         track4 = 17
         LoadRanks(track1)
+        PictureBox10.BorderStyle = BorderStyle.Fixed3D
+        PictureBox11.BorderStyle = BorderStyle.None
+        PictureBox12.BorderStyle = BorderStyle.None
+        PictureBox13.BorderStyle = BorderStyle.None
     End Sub
 
     Private Sub LoadMushroomCup(sender As Object, e As EventArgs) Handles PictureBox2.Click
@@ -1423,6 +1455,7 @@ Public Class Form1
         track2 = 28
         track3 = 19
         track4 = 17
+        ResetBorders()
     End Sub
 
     Private Sub LoadFlowerCup(sender As Object, e As EventArgs) Handles PictureBox3.Click
@@ -1438,6 +1471,7 @@ Public Class Form1
         track2 = 18
         track3 = 20
         track4 = 21
+        ResetBorders()
     End Sub
 
     Private Sub LoadStarCup(sender As Object, e As EventArgs) Handles PictureBox4.Click
@@ -1453,6 +1487,7 @@ Public Class Form1
         track2 = 29
         track3 = 25
         track4 = 24
+        ResetBorders()
     End Sub
 
     Private Sub LoadSpecialCup(sender As Object, e As EventArgs) Handles PictureBox5.Click
@@ -1468,6 +1503,7 @@ Public Class Form1
         track2 = 22
         track3 = 30
         track4 = 31
+        ResetBorders()
     End Sub
 
     Private Sub LoadShellCup(sender As Object, e As EventArgs) Handles PictureBox6.Click
@@ -1483,6 +1519,7 @@ Public Class Form1
         track2 = 38
         track3 = 36
         track4 = 35
+        ResetBorders()
     End Sub
 
     Private Sub LoadBananaCup(sender As Object, e As EventArgs) Handles PictureBox7.Click
@@ -1498,6 +1535,7 @@ Public Class Form1
         track2 = 41
         track3 = 34
         track4 = 32
+        ResetBorders()
     End Sub
 
     Private Sub LoadLeafCup(sender As Object, e As EventArgs) Handles PictureBox8.Click
@@ -1513,6 +1551,7 @@ Public Class Form1
         track2 = 37
         track3 = 39
         track4 = 45
+        ResetBorders()
     End Sub
 
     Private Sub LoadLightningCup(sender As Object, e As EventArgs) Handles PictureBox9.Click
@@ -1528,22 +1567,38 @@ Public Class Form1
         track2 = 43
         track3 = 40
         track4 = 47
+        ResetBorders()
     End Sub
 
     Private Sub LoadTrack1(sender As Object, e As EventArgs) Handles PictureBox10.Click
         LoadRanks(track1)
+        PictureBox10.BorderStyle = BorderStyle.Fixed3D
+        PictureBox11.BorderStyle = BorderStyle.None
+        PictureBox12.BorderStyle = BorderStyle.None
+        PictureBox13.BorderStyle = BorderStyle.None
     End Sub
-
     Private Sub LoadTrack2(sender As Object, e As EventArgs) Handles PictureBox11.Click
         LoadRanks(track2)
+        PictureBox10.BorderStyle = BorderStyle.None
+        PictureBox11.BorderStyle = BorderStyle.Fixed3D
+        PictureBox12.BorderStyle = BorderStyle.None
+        PictureBox13.BorderStyle = BorderStyle.None
     End Sub
 
     Private Sub LoadTrack3(sender As Object, e As EventArgs) Handles PictureBox12.Click
         LoadRanks(track3)
+        PictureBox10.BorderStyle = BorderStyle.None
+        PictureBox11.BorderStyle = BorderStyle.None
+        PictureBox12.BorderStyle = BorderStyle.Fixed3D
+        PictureBox13.BorderStyle = BorderStyle.None
     End Sub
 
     Private Sub LoadTrack4(sender As Object, e As EventArgs) Handles PictureBox13.Click
         LoadRanks(track4)
+        PictureBox10.BorderStyle = BorderStyle.None
+        PictureBox11.BorderStyle = BorderStyle.None
+        PictureBox12.BorderStyle = BorderStyle.None
+        PictureBox13.BorderStyle = BorderStyle.Fixed3D
     End Sub
     Private Sub LoadRanks(ByVal ID As Integer)
         Dim downloader As New TimeTrialDownloader(ID)
@@ -1585,9 +1640,261 @@ Public Class Form1
         NNID6.Text = downloader.Scores(5).playerNNID
     End Sub
 
+    Private Sub ResetBorders()
+        PictureBox10.BorderStyle = BorderStyle.None
+        PictureBox11.BorderStyle = BorderStyle.None
+        PictureBox12.BorderStyle = BorderStyle.None
+        PictureBox13.BorderStyle = BorderStyle.None
+    End Sub
+
 #End Region
 
+#Region "MKTV Database"
+
+
+    Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles SearchMKTV.Click
+        MKTV_Search.Show()
+
+
+    End Sub
+
+    Private Sub showvideo(ByVal Video As VideoObject)
+        miiverseurl = Video.miiverseUrl
+
+        TrackMKTV.SizeMode = PictureBoxSizeMode.StretchImage
+        MiiIconMKTV.SizeMode = PictureBoxSizeMode.StretchImage
+        CharacterMKTV.SizeMode = PictureBoxSizeMode.StretchImage
+        Select Case Video.track
+            Case "Mario Kart Stadium"
+                TrackMKTV.Image = My.Resources.MK8__Mario_Kart_Stadium
+            Case "Water Park"
+                TrackMKTV.Image = My.Resources.MK8__Water_Park
+            Case "Sweet Sweet Canyon"
+                TrackMKTV.Image = My.Resources.MK8__Sweet_Sweet_Canyon
+            Case "Thwomp Ruins"
+                TrackMKTV.Image = My.Resources.MK8__Thwomp_Ruins
+            Case "Mario Circuit"
+                TrackMKTV.Image = My.Resources.MK8__Mario_Circuit
+            Case "Toad Harbor"
+                TrackMKTV.Image = My.Resources.MK8__Toad_Harbor
+            Case "Twisted Mansion"
+                TrackMKTV.Image = My.Resources.MK8__Twisted_Mansion
+            Case "Shy Guy Falls"
+                TrackMKTV.Image = My.Resources.MK8__Shy_Guy_Falls
+            Case "Sunshine Airport"
+                TrackMKTV.Image = My.Resources.MK8__Sunshine_Airport
+            Case "Dolphin Shoals"
+                TrackMKTV.Image = My.Resources.MK8__Dolphin_Shoals
+            Case "Electrodrome"
+                TrackMKTV.Image = My.Resources.MK8__Electrodrome
+            Case "Mount Wario"
+                TrackMKTV.Image = My.Resources.MK8__Mount_Wario
+            Case "Cloudtop Cruise"
+                TrackMKTV.Image = My.Resources.MK8__Cloudtop_Cruise
+            Case "Bone-Dry Dunes"
+                TrackMKTV.Image = My.Resources.MK8__Bone_Dry_Dunes
+            Case "Bowser's Castle"
+                TrackMKTV.Image = My.Resources.MK8__Bowser_s_Castle
+            Case "Rainbow Road"
+                TrackMKTV.Image = My.Resources.MK8__Rainbow_Road
+            Case "Wii Moo Moo Meadows"
+                TrackMKTV.Image = My.Resources.MK8__Wii_Moo_Moo_Meadows
+            Case "GBA Mario Circuit"
+                TrackMKTV.Image = My.Resources.MK8__GBA_Mario_Circuit
+            Case "DS Cheep Cheep Beach"
+                TrackMKTV.Image = My.Resources.MK8__DS_Cheep_Cheep_Beach
+            Case "N64 Toad's Turnpike"
+                TrackMKTV.Image = My.Resources.MK8__N64_Toad_s_Turnpike
+            Case "GCN Dry Dry Desert"
+                TrackMKTV.Image = My.Resources.MK8__GCN_Dry_Dry_Desert
+            Case "SNES Donut Plains 3"
+                TrackMKTV.Image = My.Resources.MK8__SNES_Donut_Plains_3
+            Case "N64 Royal Raceway"
+                TrackMKTV.Image = My.Resources.MK8__N64_Royal_Raceway
+            Case "3DS DK Jungle"
+                TrackMKTV.Image = My.Resources.MK8__3DS_DK_Jungle
+            Case "DS Wario Stadium"
+                TrackMKTV.Image = My.Resources.MK8__DS_Wario_Stadium
+            Case "GCN Sherbet Land"
+                TrackMKTV.Image = My.Resources.MK8__GCN_Sherbet_Land
+            Case "3DS Music Park"
+                TrackMKTV.Image = My.Resources.MK8__3DS_Music_Park
+            Case "N64 Yoshi Valley"
+                TrackMKTV.Image = My.Resources.MK8__N64_Yoshi_Valley
+            Case "DS Tick-Tock Clock"
+                TrackMKTV.Image = My.Resources.MK8__DS_Tick_Tock_Clock
+            Case "3DS Piranha Plant Slide"
+                TrackMKTV.Image = My.Resources.MK8__3DS_Piranha_Plant_Slide
+            Case "Wii Grumble Volcano"
+                TrackMKTV.Image = My.Resources.MK8__Wii_Grumble_Volcano
+            Case "N64 Rainbow Road"
+                TrackMKTV.Image = My.Resources.MK8__N64_Rainbow_Road
+        End Select
+
+        MiiIconMKTV.ImageLocation = Video.miiIconUrl
+        CharacterMKTV.ImageLocation = "http://winepicgaming.de/mkapp/images/" & Video.character & ".png"
+        MiiNameMKTV.Text = Video.miiName
+        NNIDMKTV.Text = "NNID: " & Video.nnid
+        GameModeMKTV.Text = Video.gameMode
+        VideoViewer.Navigate("http://www.youtube.com/embed/" & Video.youtubeId)
+        If miiverseurl = "None" Then
+            MiiverseLink.Visible = False
+        Else
+            MiiverseLink.Visible = True
+        End If
+    End Sub
+
+    Private Sub VideoList_SelectedIndexChanged(sender As Object, e As EventArgs) Handles VideoList.SelectedIndexChanged
+        Try
+            Dim i As Integer = VideoList.FocusedItem.Index
+            showvideo(youtube(i))
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
+
+
+    Private Sub MiiverseLink_Click(sender As Object, e As EventArgs) Handles MiiverseLink.Click
+        System.Diagnostics.Process.Start(miiverseurl)
+    End Sub
+
+    Private Sub LoadFavourites()
+        Dim json As String
+        Try
+            json = System.IO.File.ReadAllText("favourites.json")
+            favourites = JsonConvert.DeserializeObject(Of List(Of VideoObject))(json)
+        Catch ex As Exception
+            MsgBox("No favourites have been added")
+        End Try
+        VideoList.Items.Clear()
+        For Each video As VideoObject In favourites
+            Dim item As ListViewItem = New ListViewItem
+            item.SubItems.Add("")
+            item.SubItems.Add("")
+            item.SubItems.Add("")
+            item.SubItems.Add("")
+            item.SubItems.Add("")
+            item.SubItems.Add("")
+            item.SubItems(0).Text = video.uploadTime.ToString
+            item.SubItems(1).Text = video.miiName
+            item.SubItems(2).Text = video.nnid
+            item.SubItems(3).Text = video.track
+            item.SubItems(4).Text = video.gameMode
+            item.SubItems(5).Text = video.character
+            VideoList.Items.Add(item)
+        Next
+        VideoList.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent)
+        AreFavShown = True
+        SaveFav.Enabled = False
+        RemoveFav.Enabled = True
+        ShowFav.Enabled = False
+        youtube = favourites
+    End Sub
+
+    Private Sub SaveFavourites()
+        Dim json As String = JsonConvert.SerializeObject(favourites)
+        System.IO.File.WriteAllText("favourites.json", json)
+    End Sub
+
+    Private Sub ShowFav_Click(sender As Object, e As EventArgs) Handles ShowFav.Click
+        LoadFavourites()
+    End Sub
+
+    Private Sub SaveFav_Click(sender As Object, e As EventArgs) Handles SaveFav.Click
+        Try
+            Dim i As Integer = VideoList.FocusedItem.Index
+            favourites.Add(youtube(i))
+            SaveFavourites()
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub RemoveFav_Click(sender As Object, e As EventArgs) Handles RemoveFav.Click
+        Try
+            Dim i As Integer = VideoList.FocusedItem.Index
+            favourites.Remove(favourites(i))
+            SaveFavourites()
+            LoadFavourites()
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles MKTVDB.Click
+        If IsRegistryKeySet() Then
+            Dim result As MsgBoxResult = MsgBox("This will uninstall the MKTV Database Handler from your PC. Make sure this app has Administrator rights as this will apply changes to your Windows Registry. Do you want to continue?", MsgBoxStyle.YesNo, "MKTVDB Handler installation")
+            If result = MsgBoxResult.Yes Then
+                Try
+                    Registry.ClassesRoot.DeleteSubKeyTree("mktvdb")
+                Catch ex As Exception
+                    MsgBox("Uninstall failed. Are you running as Admin? No changes were made to your registry.")
+                End Try
+
+            End If
+        Else
+            Dim result As MsgBoxResult = MsgBox("This will install the MKTV Database Handler to your PC. Make sure this app has Administrator rights as this will apply changes to your Windows Registry. Do you want to continue?", MsgBoxStyle.YesNo, "MKTVDB Handler installation")
+            If result = MsgBoxResult.Yes Then
+                Try
+                    Dim key As RegistryKey = Registry.ClassesRoot.CreateSubKey("mktvdb")
+                    key.SetValue("URL Protocol", "")
+                    key.CreateSubKey("DefaultIcon").SetValue("", Application.ExecutablePath & ",1")
+                    key.CreateSubKey("shell").CreateSubKey("open").CreateSubKey("command").SetValue("", """" & Application.ExecutablePath & """ ""%1""")
+                Catch ex As Exception
+                    MsgBox("Installation failed. Are you running as Admin? No changes were made to your registry.")
+                End Try
+            End If
+        End If
+
+        If IsRegistryKeySet() Then
+            MKTVDB.Text = "Uninstall MKTVDB Handler"
+        Else
+            MKTVDB.Text = "Install MKTVDB Handler"
+        End If
+    End Sub
+
+    Private Sub MKTVDBExternalCall(Optional ByVal NNID As String = "", Optional ByVal YoutubeID As String = "")
+        Homepage.SelectTab(4)
+        Dim query As New MktvDirectQuery(YoutubeID, NNID)
+        youtube = query.Videos
+        For Each video As VideoObject In query.Videos
+            Dim item As ListViewItem = New ListViewItem
+            item.SubItems.Add("")
+            item.SubItems.Add("")
+            item.SubItems.Add("")
+            item.SubItems.Add("")
+            item.SubItems.Add("")
+            item.SubItems.Add("")
+            item.SubItems(0).Text = video.uploadTime.ToString
+            item.SubItems(1).Text = video.miiName
+            item.SubItems(2).Text = video.nnid
+            item.SubItems(3).Text = video.track
+            item.SubItems(4).Text = video.gameMode
+            item.SubItems(5).Text = video.character
+            VideoList.Items.Add(item)
+        Next
+        VideoList.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent)
+        If Not YoutubeID = "" Then
+            Try
+                VideoList.Items(0).Focused = True
+            Catch ex As Exception
+
+            End Try
+        End If
+    End Sub
+#End Region
+
+    Private Function IsRegistryKeySet() As Boolean
+        If My.Computer.Registry.GetValue("HKEY_CLASSES_ROOT\mktvdb", "URL Protocol", Nothing) Is Nothing Then
+            Return False
+        End If
+        Return True
+    End Function
 End Class
+
 
 
 

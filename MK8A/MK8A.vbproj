@@ -26,7 +26,7 @@
     <UpdateUrl>http://localhost/MK8A/</UpdateUrl>
     <WebPage>publish.htm</WebPage>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.2.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -82,9 +82,12 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+    <Reference Include="MktvdbQuery">
+      <HintPath>..\..\..\..\MktvdbQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft2.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Downloads\Json60r4\Bin\Net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>bin\Debug\Newtonsoft2.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -131,6 +134,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MKTV_Search.Designer.vb">
+      <DependentUpon>MKTV_Search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MKTV_Search.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -158,6 +167,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MKTV_Search.resx">
+      <DependentUpon>MKTV_Search.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -166,6 +178,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\FontAwesome.otf" />
     <None Include="Resources\MK8A_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
@@ -211,6 +224,7 @@
     <Resource Include="Resources\MK8-_Water_Park.PNG" />
     <Resource Include="Resources\MK8-_Wii_Grumble_Volcano.PNG" />
     <Resource Include="Resources\MK8-_Wii_Moo_Moo_Meadows.PNG" />
+    <Resource Include="Resources\miiverse.png" />
     <Content Include="Resources\mk8item2_256px.ico" />
     <Resource Include="Resources\MK8-_3DS_DK_Jungle.PNG" />
   </ItemGroup>
